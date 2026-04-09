@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domains Technologies</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Devicon for Technology Icons -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!-- Lucide for UI Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <i data-lucide="layers" class="logo-icon"></i>
+                <h1>Domains Technologies</h1>
+            </div>
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                <i data-lucide="moon" id="theme-icon"></i>
+            </button>
+        </header>
+
+        <!-- Navigation Tabs -->
+        <nav class="nav-tabs-container">
+            <ul class="nav-tabs" id="nav-tabs">
+                <!-- Dynamically populated -->
+            </ul>
+        </nav>
+
+        <!-- Main Content Section -->
+        <main class="main-content">
+            <!-- Search -->
+            <div class="search-container">
+                <i data-lucide="search" class="search-icon"></i>
+                <input type="text" id="search-input" placeholder="Search technologies..." autocomplete="off">
+            </div>
+
+            <!-- Grid -->
+            <div class="tech-grid" id="tech-grid">
+                <!-- Dynamically populated -->
+            </div>
+            
+            <!-- Empty State -->
+            <div class="no-results" id="no-results" style="display: none;">
+                <i data-lucide="ghost"></i>
+                <p>No technologies found.</p>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Created by <strong>Ayan Memon</strong></p>
+        </footer>
+    </div>
+
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
